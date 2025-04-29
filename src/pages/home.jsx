@@ -1,43 +1,48 @@
 import React from 'react';
-import "../styles/home.css"
+import '../styles/home.css';
 
-const home = () => {
-    return (
-        <div className='home_container'>
-            <div className="sidebar">
-                <h2>LMS</h2>
-                <ul>
-                    <li>Dashboard</li>
-                    <li>Courses</li>
-                    <li>Students</li>
-                    <li>Assignments</li>
-                    <li>Settings</li>
-                </ul>
-            </div>
+const Home = () => {
+  return (
+    <div className="homepage">
+      <section className="hero">
+        <h1>Welcome to AliceEdu!</h1>
+        <p>Your one-stop platform to manage learning, teaching, and progress tracking.</p>
+        <button>Get Started</button>
+      </section>
 
-            <div className="main-content">
-                <div className="navbar">
-                    <h1>Dashboard</h1>
-                    <input type="text" placeholder="Search..." />
-                </div>
-
-                <div className="cards">
-                    <div className="card">
-                        <h3>Total Courses</h3>
-                        <p id="course-count">5</p>
-                    </div>
-                    <div className="card">
-                        <h3>Students</h3>
-                        <p id="student-count">120</p>
-                    </div>
-                    <div className="card">
-                        <h3>Progress</h3>
-                        <p id="progress">78%</p>
-                    </div>
-                </div>
-            </div>
+      <section className="categories">
+        <h2>Browse Categories</h2>
+        <div className="category-list">
+          <div className="category">Technology</div>
+          <div className="category">Business</div>
+          <div className="category">Design</div>
+          <div className="category">Science</div>
         </div>
-    )
-}
+      </section>
 
-export default home
+      <section className="featured-courses">
+        <h2>Featured Courses</h2>
+        <div className="courses">
+          <div className="course-card">
+            <h3>React for Beginners</h3>
+            <p>Build dynamic web apps with React.</p>
+          </div>
+          <div className="course-card">
+            <h3>UI/UX Design</h3>
+            <p>Learn modern design principles and tools.</p>
+          </div>
+          <div className="course-card">
+            <h3>Python Programming</h3>
+            <p>Master Python from basics to advanced.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer className="footer">
+        <p>&copy; {new Date().getFullYear()} SmartLMS. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default Home;

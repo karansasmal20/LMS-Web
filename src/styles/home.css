@@ -1,66 +1,87 @@
 .homepage {
-    font-family: Arial, sans-serif;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .hero {
-    background: #282c34;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-  }
-  
-  .hero h1 {
-    margin-bottom: 10px;
-  }
-  
-  .hero button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #61dafb;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .categories, .featured-courses {
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .category-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .category {
-    background-color: #f1f1f1;
-    padding: 20px;
-    width: 150px;
-    border-radius: 8px;
-  }
-  
-  .courses {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .course-card {
-    background-color: #fafafa;
-    padding: 20px;
-    border-radius: 8px;
-    width: 250px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  .footer {
-    text-align: center;
-    padding: 20px;
-    background: #eee;
-    margin-top: 40px;
-  }
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.hero {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero button {
+  margin-top: 30px;
+  padding: 12px 28px;
+  background-color: #61dafb;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #4ec0e9;
+}
+
+.categories, .featured-courses {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.category {
+  background-color: #f1f1f1;
+  padding: 20px;
+  width: 150px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.courses {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+  margin-top: 40px;
+}
